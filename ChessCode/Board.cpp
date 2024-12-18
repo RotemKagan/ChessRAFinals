@@ -13,24 +13,62 @@ void Board::clearBoard() {
 	}
 }
 void resetBoard();
-void makeMove(std::string move) {
+bool Board::makeMove(std::string move) {
 	Piece* cur = NULL;
 	Piece* fut = NULL;
 	std::string curPos = "";
 	std::string futPos = "";
 	futPos = move[2] + move[3];
 	curPos = move[0] + move[1];
+	int col = 0;
+	int row = 0;
 	
+	cur = getPiece(curPos);
+	if (!cur) {
+		return false;
+	}
+	
+	if (!cur->isLegal(move, *this)) {
+		return false;
+	}
+
+	setPiece(futPos, cur);
+	setPiece(curPos, NULL);
+
+	return true;
 }
-bool isCheck();
+
+bool Board::isCheck() {
+	int i = 0;
+	int j = 0;
+	Piece* piece = NULL;
+	for (i = 0; i < WIDTH; i++) {
+		for (j = 0; j < HEIGHT; i++) {
+			piece = board[i][j];
+			if (piece->isDoCheck(*this)) {
+				return true;
+			}
+		}
+	}
+}
 
 Piece* Board::getPiece(std::string pos) { //example of pos - "e5"
 	int col = 0;
 	int row = 0;
 
-	col = pos[0] - '1';
-	row = pos[1] - 'a';
+	col = pos[1] - '1';
+	row = pos[0] - 'a';
 
 
 	return	board[col][row];
+}
+
+void Board::setPiece(std::string pos, Piece* piece) {
+	int col = 0;
+	int row = 0;
+
+	col = pos[1] - '1';
+	row = pos[0] - 'a';
+
+	board[col][row] = piece;
 }

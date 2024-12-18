@@ -16,10 +16,11 @@ public:
 
 	void clearBoard();
 	void resetBoard();
-	void makeMove(std::string move);
+	bool makeMove(std::string move);
 	bool isCheck();
 
 	Piece* getPiece(std::string pos);
+	void setPiece(std::string pos, Piece* piece);
 };
 
 
