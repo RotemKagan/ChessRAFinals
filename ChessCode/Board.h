@@ -15,7 +15,8 @@ public:
 	Board();
 
 	void clearBoard();
-	void resetBoard();
+	//what is this fucniton?
+	//void resetBoard();
 	bool makeMove(std::string move);
 	bool isCheck();
 

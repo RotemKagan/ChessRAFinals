@@ -1,4 +1,6 @@
 #include "Board.h"
+//explain shortly how the board works
+//how to we convert from e5 to numbers of the board
 
 Board::Board(): board(WIDTH, std::vector<Piece*>(HEIGHT, 0)) {
 }
@@ -12,7 +14,6 @@ void Board::clearBoard() {
 		}
 	}
 }
-void resetBoard();
 bool Board::makeMove(std::string move) {
 	Piece* cur = NULL;
 	Piece* fut = NULL;
