@@ -1,0 +1,109 @@
+﻿  Board.cpp
+C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Piece.h(14,42): error C2061: syntax error: identifier 'Board'
+  (compiling source file 'Board.cpp')
+  
+C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Piece.h(15,41): error C2061: syntax error: identifier 'Board'
+  (compiling source file 'Board.cpp')
+  
+C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Piece.h(16,25): error C2061: syntax error: identifier 'Board'
+  (compiling source file 'Board.cpp')
+  
+C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Board.cpp(32,12): error C2660: 'Piece::isLegal': function does not take 2 arguments
+      C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Piece.h(15,15):
+      see declaration of 'Piece::isLegal'
+      C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Board.cpp(32,12):
+      while trying to match the argument list '(std::string, Board)'
+  
+C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Board.cpp(49,15): error C2660: 'Piece::isDoCheck': function does not take 1 arguments
+      C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Piece.h(16,15):
+      see declaration of 'Piece::isDoCheck'
+      C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Board.cpp(49,15):
+      while trying to match the argument list '(Board)'
+  
+  Board.h
+C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Piece.h(14,42): error C2061: syntax error: identifier 'Board'
+  (compiling source file 'Board.h')
+  
+C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Piece.h(15,41): error C2061: syntax error: identifier 'Board'
+  (compiling source file 'Board.h')
+  
+C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Piece.h(16,25): error C2061: syntax error: identifier 'Board'
+  (compiling source file 'Board.h')
+  
+  King.cpp
+C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Piece.h(14,42): error C2061: syntax error: identifier 'Board'
+  (compiling source file 'King.cpp')
+  
+C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Piece.h(15,41): error C2061: syntax error: identifier 'Board'
+  (compiling source file 'King.cpp')
+  
+C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Piece.h(16,25): error C2061: syntax error: identifier 'Board'
+  (compiling source file 'King.cpp')
+  
+C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\King.h(10,15): error C3668: 'King::makeMove': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'King.cpp')
+  
+C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\King.h(11,15): error C3668: 'King::isLegal': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'King.cpp')
+  
+C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\King.h(12,15): error C3668: 'King::isDoCheck': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'King.cpp')
+  
+  piece.cpp
+C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Board.h(13,26): error C2065: 'Piece': undeclared identifier
+  (compiling source file 'piece.cpp')
+  
+C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Board.h(13,32): error C2059: syntax error: '>'
+  (compiling source file 'piece.cpp')
+  
+C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Board.h(23,7): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'piece.cpp')
+  
+C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Board.h(23,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'piece.cpp')
+  
+C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Board.h(23,34): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'piece.cpp')
+  
+C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Board.h(24,33): error C2061: syntax error: identifier 'Piece'
+  (compiling source file 'piece.cpp')
+  
+  Piece.h
+C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Board.h(13,26): error C2065: 'Piece': undeclared identifier
+  (compiling source file 'Piece.h')
+  
+C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Board.h(13,32): error C2059: syntax error: '>'
+  (compiling source file 'Piece.h')
+  
+C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Board.h(23,7): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'Piece.h')
+  
+C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Board.h(23,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'Piece.h')
+  
+C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Board.h(23,34): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'Piece.h')
+  
+C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Board.h(24,33): error C2061: syntax error: identifier 'Piece'
+  (compiling source file 'Piece.h')
+  
+  Rook.cpp
+C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Piece.h(14,42): error C2061: syntax error: identifier 'Board'
+  (compiling source file 'Rook.cpp')
+  
+C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Piece.h(15,41): error C2061: syntax error: identifier 'Board'
+  (compiling source file 'Rook.cpp')
+  
+C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Piece.h(16,25): error C2061: syntax error: identifier 'Board'
+  (compiling source file 'Rook.cpp')
+  
+C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Rook.h(10,15): error C3668: 'Rook::makeMove': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'Rook.cpp')
+  
+C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Rook.h(11,15): error C3668: 'Rook::isLegal': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'Rook.cpp')
+  
+C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Rook.h(12,15): error C3668: 'Rook::isDoCheck': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'Rook.cpp')
+  
+  Generating Code...

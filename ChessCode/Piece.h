@@ -10,10 +10,13 @@ protected:
 	std::string name;
 public:
 	Piece(int color, std::string name);
-
+	~Piece();
 	virtual void makeMove(std::string move, Board board) = 0;
 	virtual bool isLegal(std::string move, Board board) = 0;
 	virtual bool isDoCheck(Board board) = 0; //func checks if this piece is threatening the king, returns true if it is
+	std::string getName()const;
+	int getColor()const;
+
 };
 
 

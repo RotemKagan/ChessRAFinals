@@ -46,7 +46,7 @@ bool Rook::isLegal(std::string move, Board board)
         for (i = startCol; i < endCol; i++) 
         {
             //create position and check it, the 1 in the beginning is str length
-            pos = std::string(1, 'a' + i) + char(1,currRow + 1);
+            pos = std::string(1, 'a' + i) + char(currRow + 1);
             if (board.getPiece(pos) != nullptr) 
             {
                 return false; 
