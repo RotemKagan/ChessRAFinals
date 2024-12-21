@@ -1,46 +1,134 @@
-#include "Board.h"
-#include "Piece.h"
 #include "King.h"
-//check my code and correct if needed
-King::King(int color, std::string name)
-	:Piece(color, name)
-{
+#include <iostream>
+#include <cmath>
+
+King::King(int color, std::string name): Piece(color, name) {
+}
+King::~King() {
 
 }
-King::~King()
-{
-
-}
-void King::makeMove(std::string move, Board board)
-{
+void King::makeMove(std::string move, Board board) {
 	board.makeMove(move);
 }
-bool King::isLegal(std::string move, Board board)
-{
+bool King::isLegal(std::string move, Board board) {
+    std::string curr = "";
+    std::string dest = "";
+    dest = move[2] + move[3];
+    curr = move[0] + move[1];
 
-    char startCol = move[0]-'a';
-    int startRow = move[1] - '1';
-    char endCol = move[2]-'a';
-    int endRow = move[3] - '1'; 
+    Piece* piece = NULL;
 
-    // didnt move 
-    if (startCol == endCol && startRow == endRow)
+    //converts
+    int currRow = curr[1] - '1';
+    int currCol = curr[0] - 'a';
+    int destRow = dest[1] - '1';
+    int destCol = dest[0] - 'a';
+    //checks for same move
+    if (currRow == destRow && currCol == destCol)
     {
         return false;
     }
-    int destX = endRow;
-    int destY = endCol - 'a';
 
-    // Check if move is one square in any direction
-    if (abs(endRow - startRow) <= 1 && abs(endCol - startCol) <= 1)
-    {
-        Piece* targetPiece = board.getPiece(move.substr(2, 2)); 
-        if (targetPiece == nullptr || targetPiece->getColor() != this->getColor())
-        {
-            return true; 
+    //checks if the move is in 1 move range, if not returns false
+    if (std::abs(currRow - destRow) > 1 || std::abs(currCol - destCol)) {
+        return false;
+    }
+
+    // checks if there is a piece same color in dest pos, if yes returns false
+    piece = board.getPiece(dest);
+    if (piece) {
+        if (piece->getColor() == this->getColor()) {
+            return false;
         }
     }
 
-    return false; 
+    // checks if there check in dest pos
+    if (isUnderCheck(dest, board)) {
+        return false;
+    }
+
+    return true;
 }
-//now all the check stuff and moving the king if needed and all that with the check try to do please
+bool King::isUnderCheck(std::string pos, Board board) {
+    int i = 0;
+    Piece* piece = NULL;
+    //converts
+    int currRow = pos[1] - '1';
+    int currCol = pos[0] - 'a';
+
+    int newRow = 0;
+    int newCol = 0;
+
+    std::string pos = "";
+
+    //checks for straight line Checks
+    // in each check it will check from the king pos up/down, if it found same color piece, it will go for the next check, if before that it find other color rook/queen, it will be check
+    // add when there are other color piece and its not queen/rook, move to next check
+    //colUp - same col
+    
+    newRow = currRow;
+    newCol = currCol;
+    for (i = currRow; i < WIDTH; i++) {
+        pos = char(newCol) + char(i + 1);
+        piece = board.getPiece(pos);
+        if (piece->getColor() != this->getColor()) {
+            if (piece->getName() == "Rook" || piece->getName() == "Queen") {
+                return true;
+            }
+        }
+        else {
+            i = WIDTH;
+        }
+    }
+
+    //colDown - same col
+
+    newRow = currRow;
+    newCol = currCol;
+    for (i = currRow; i > 1; i--) {
+        pos = char(newCol) + char(i - 1);
+        piece = board.getPiece(pos);
+        if (piece->getColor() != this->getColor()) {
+            if (piece->getName() == "Rook" || piece->getName() == "Queen") {
+                return true;
+            }
+        }
+        else {
+            i = 1;
+        }
+    }
+
+    //rowUp - same row
+
+    newRow = currRow;
+    newCol = currCol;
+    for (i = currCol; i < HEIGHT; i++) {
+        pos = char(i + 1) + char(currRow);
+        piece = board.getPiece(pos);
+        if (piece->getColor() != this->getColor()) {
+            if (piece->getName() == "Rook" || piece->getName() == "Queen") {
+                return true;
+            }
+        }
+        else {
+            i = HEIGHT;
+        }
+    }
+
+    //rowDown - same row
+
+    newRow = currRow;
+    newCol = currCol;
+    for (i = currCol; i > 1; i--) {
+        pos = char(i - 1) + char(currRow);
+        piece = board.getPiece(pos);
+        if (piece->getColor() != this->getColor()) {
+            if (piece->getName() == "Rook" || piece->getName() == "Queen") {
+                return true;
+            }
+        }
+        else {
+            i = 1;
+        }
+    }
+}

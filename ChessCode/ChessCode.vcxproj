@@ -129,7 +129,16 @@
   <ItemGroup>
     <ClCompile Include="Board.cpp" />
     <ClCompile Include="Board.h" />
+    <ClCompile Include="King.cpp" />
+    <ClCompile Include="King1.cpp" />
+    <ClCompile Include="piece.cpp" />
     <ClCompile Include="Piece.h" />
+    <ClCompile Include="Rook.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="King.h" />
+    <ClInclude Include="King1.h" />
+    <ClInclude Include="Rook.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

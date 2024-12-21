@@ -77,8 +77,5 @@ bool Rook::isLegal(std::string move, Board board)
     }
     return true;
 }
-bool Rook::isDoCheck(Board board) 
-{
-    //please do this fucntion i dont really know how to
-}
+
 //!! do half of the king i wiil do a part of it to but make a board to check are code please

@@ -13,10 +13,9 @@ public:
 	~Piece();
 	virtual void makeMove(std::string move, Board board) = 0;
 	virtual bool isLegal(std::string move, Board board) = 0;
-	virtual bool isDoCheck(Board board) = 0; //func checks if this piece is threatening the king, returns true if it is
 	std::string getName()const;
 	int getColor()const;
-
+	virtual bool isUnderCheck(std::string pos, Board board) = 0; //checks if king under check. if not a king it will return false. had to be virtual.
 };
 
 
