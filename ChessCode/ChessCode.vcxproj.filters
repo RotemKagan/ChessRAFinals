@@ -24,9 +24,6 @@
     <ClCompile Include="Board.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="King1.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="piece.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -38,9 +35,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="King1.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Rook.h">
       <Filter>Header Files</Filter>
     </ClInclude>

@@ -9,5 +9,5 @@ public:
 	~Rook();
 	virtual void makeMove(std::string move, Board board) override;
 	virtual bool isLegal(std::string move, Board board) override;
-	virtual bool isDoCheck(Board board) override;
+	virtual bool isUnderCheck(std::string pos, Board board) override;
 };

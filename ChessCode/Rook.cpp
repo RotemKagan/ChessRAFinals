@@ -78,4 +78,8 @@ bool Rook::isLegal(std::string move, Board board)
     return true;
 }
 
+bool Rook::isUnderCheck(std::string pos, Board board) {
+    return false;
+}
+
 //!! do half of the king i wiil do a part of it to but make a board to check are code please
