@@ -42,11 +42,13 @@ bool Board::makeMove(std::string move) {
 bool Board::isCheck() {
 	int i = 0;
 	int j = 0;
+	std::string pos = "";
 	Piece* piece = NULL;
 	for (i = 0; i < WIDTH; i++) {
 		for (j = 0; j < HEIGHT; i++) {
 			piece = board[i][j];
-			if (piece->isDoCheck(*this)) {
+			pos = char(i + 'a') + char(j + '1');
+			if (piece->isUnderCheck(pos, *this)) {
 				return true;
 			}
 		}
