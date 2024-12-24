@@ -11,20 +11,21 @@ void Bishop::makeMove(std::string move, Board board)
 {
 	board.makeMove(move);
 }
-bool Bishop::isLegal(std::string toMove, Board board)
+bool Bishop::isLegal(std::string move, Board board)
 {
-    int startCol = toMove[0] - 'a';  
-    int startRow = toMove[1] - '1';
-    int endCol = toMove[3] - 'a';  
-    int endRow = toMove[4] - '1'; 
-
+    std::string dest = std::string(1, move[2]) + std::string(1, move[3]);
+    int startCol = move[0] - 'a';  
+    int startRow = move[1] - '1';
+    int endCol = move[2] - 'a';  
+    int endRow = move[3] - '1'; 
+   
     // if not diagonal
     if (abs(endCol - startCol) != abs(endRow - startRow)) 
     {
         return false;
     }
     //if same place
-    if (startCol == endCol && startRow) 
+    if (startCol == endCol && startRow==endRow) 
     {
         return false;
     }
@@ -65,7 +66,7 @@ bool Bishop::isLegal(std::string toMove, Board board)
         row += isUpRow;
     }
     //check if it didnt capture its own piece
-    Piece* targetPiece = board.getPiece(toMove);
+    Piece* targetPiece = board.getPiece(dest);
     if (targetPiece != nullptr && targetPiece->getColor() == this->getColor()) 
     {
         return false; 

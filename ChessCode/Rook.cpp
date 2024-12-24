@@ -17,10 +17,8 @@ void Rook::makeMove(std::string move, Board board)
 }
 bool Rook::isLegal(std::string move, Board board) 
 {
-    std::string curr = "";
-    std::string dest = "";
-    dest = move[2] + move[3];
-    curr = move[0] + move[1];
+    std::string dest = std::string(1, move[2]) + std::string(1, move[3]);
+    std::string curr = std::string(1, move[0]) + std::string(1, move[1]);
     //converts
     int currRow = curr[1] - '1'; 
     int currCol = curr[0] - 'a';
