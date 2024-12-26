@@ -135,12 +135,14 @@
     <ClCompile Include="Pawn.h" />
     <ClCompile Include="piece.cpp" />
     <ClCompile Include="Piece.h" />
+    <ClCompile Include="Player.cpp" />
     <ClCompile Include="Queen.cpp" />
     <ClCompile Include="Rook.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Bishop.h" />
     <ClInclude Include="King.h" />
+    <ClInclude Include="Player.h" />
     <ClInclude Include="Queen.h" />
     <ClInclude Include="Rook.h" />
   </ItemGroup>

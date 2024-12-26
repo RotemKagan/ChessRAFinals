@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Year 2\\C\u002B\u002B\\ChessProj\\gitPull\\ChessRAFinals\\ChessCode\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{727C68C0-31A3-4B20-9A0F-CE5BDD591D97}|ChessCode.vcxproj|C:\\Users\\Cyber_User\\Documents\\Magshimim\\Year 2\\C\u002B\u002B\\ChessProj\\gitPull\\ChessRAFinals\\ChessCode\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{727C68C0-31A3-4B20-9A0F-CE5BDD591D97}|ChessCode.vcxproj|solutionrelative:Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{727C68C0-31A3-4B20-9A0F-CE5BDD591D97}|ChessCode.vcxproj|C:\\Users\\Cyber_User\\Documents\\Magshimim\\Year 2\\C\u002B\u002B\\ChessProj\\gitPull\\ChessRAFinals\\ChessCode\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{727C68C0-31A3-4B20-9A0F-CE5BDD591D97}|ChessCode.vcxproj|solutionrelative:Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{727C68C0-31A3-4B20-9A0F-CE5BDD591D97}|ChessCode.vcxproj|C:\\Users\\Cyber_User\\Documents\\Magshimim\\Year 2\\C\u002B\u002B\\ChessProj\\gitPull\\ChessRAFinals\\ChessCode\\Pawn.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{727C68C0-31A3-4B20-9A0F-CE5BDD591D97}|ChessCode.vcxproj|solutionrelative:Pawn.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -51,19 +59,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Player.cpp",
+              "DocumentMoniker": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Year 2\\C\u002B\u002B\\ChessProj\\gitPull\\ChessRAFinals\\ChessCode\\Player.cpp",
+              "RelativeDocumentMoniker": "Player.cpp",
+              "ToolTip": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Year 2\\C\u002B\u002B\\ChessProj\\gitPull\\ChessRAFinals\\ChessCode\\Player.cpp",
+              "RelativeToolTip": "Player.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-26T13:19:03.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Player.h",
+              "DocumentMoniker": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Year 2\\C\u002B\u002B\\ChessProj\\gitPull\\ChessRAFinals\\ChessCode\\Player.h",
+              "RelativeDocumentMoniker": "Player.h",
+              "ToolTip": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Year 2\\C\u002B\u002B\\ChessProj\\gitPull\\ChessRAFinals\\ChessCode\\Player.h",
+              "RelativeToolTip": "Player.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-26T12:29:53.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Pawn.cpp",
               "DocumentMoniker": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Year 2\\C\u002B\u002B\\ChessProj\\gitPull\\ChessRAFinals\\ChessCode\\Pawn.cpp",
               "RelativeDocumentMoniker": "Pawn.cpp",
               "ToolTip": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Year 2\\C\u002B\u002B\\ChessProj\\gitPull\\ChessRAFinals\\ChessCode\\Pawn.cpp",
               "RelativeToolTip": "Pawn.cpp",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAABYAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAAAE0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-26T09:22:49.172Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Pawn.h",
               "DocumentMoniker": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Year 2\\C\u002B\u002B\\ChessProj\\gitPull\\ChessRAFinals\\ChessCode\\Pawn.h",
               "RelativeDocumentMoniker": "Pawn.h",
@@ -71,12 +105,11 @@
               "RelativeToolTip": "Pawn.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-26T09:18:03.648Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-26T09:18:03.648Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Rook.h",
               "DocumentMoniker": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Year 2\\C\u002B\u002B\\ChessProj\\gitPull\\ChessRAFinals\\ChessCode\\Rook.h",
               "RelativeDocumentMoniker": "Rook.h",
@@ -88,7 +121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "King.h",
               "DocumentMoniker": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Year 2\\C\u002B\u002B\\ChessProj\\gitPull\\ChessRAFinals\\ChessCode\\King.h",
               "RelativeDocumentMoniker": "King.h",
@@ -96,12 +129,11 @@
               "RelativeToolTip": "King.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-21T14:48:15.269Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-21T14:48:15.269Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "King.cpp",
               "DocumentMoniker": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Year 2\\C\u002B\u002B\\ChessProj\\gitPull\\ChessRAFinals\\ChessCode\\King.cpp",
               "RelativeDocumentMoniker": "King.cpp",
@@ -109,12 +141,11 @@
               "RelativeToolTip": "King.cpp",
               "ViewState": "AgIAADYAAAAAAAAAAAAAAIUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-21T14:46:20.027Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-21T14:46:20.027Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Rook.cpp",
               "DocumentMoniker": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Year 2\\C\u002B\u002B\\ChessProj\\gitPull\\ChessRAFinals\\ChessCode\\Rook.cpp",
               "RelativeDocumentMoniker": "Rook.cpp",
@@ -122,12 +153,11 @@
               "RelativeToolTip": "Rook.cpp",
               "ViewState": "AgIAAD8AAAAAAAAAAAAAAEoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-21T14:44:42.136Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-21T14:44:42.136Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Board.cpp",
               "DocumentMoniker": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Year 2\\C\u002B\u002B\\ChessProj\\gitPull\\ChessRAFinals\\ChessCode\\Board.cpp",
               "RelativeDocumentMoniker": "Board.cpp",
@@ -135,12 +165,11 @@
               "RelativeToolTip": "Board.cpp",
               "ViewState": "AgIAADkAAAAAAAAAAAAAADsAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-17T09:58:26.07Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-17T09:58:26.07Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Board.h",
               "DocumentMoniker": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Year 2\\C\u002B\u002B\\ChessProj\\gitPull\\ChessRAFinals\\ChessCode\\Board.h",
               "RelativeDocumentMoniker": "Board.h",
@@ -148,12 +177,11 @@
               "RelativeToolTip": "Board.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-17T09:35:59.899Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-17T09:35:59.899Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Piece.h",
               "DocumentMoniker": "C:\\Users\\Cyber_User\\Documents\\Magshimim\\Year 2\\C\u002B\u002B\\ChessProj\\gitPull\\ChessRAFinals\\ChessCode\\Piece.h",
               "RelativeDocumentMoniker": "Piece.h",
@@ -161,8 +189,7 @@
               "RelativeToolTip": "Piece.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-17T09:32:29.602Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-17T09:32:29.602Z"
             }
           ]
         }

@@ -68,11 +68,11 @@ bool Pawn::isLegal(std::string move, Board board) {
 			return false;
 		}
 
-		if (!dPiece) { //capturing empty palce
+		if (!dPiece) { //capturing empty place
 			return false;
 		}
 
-		if (dPiece->getColor() == pColor) { //trying to capture the same colored piece
+		if (dPiece->getColor() == pColor) { //trying to capture same colored piece
 			return false;
 		}
 
