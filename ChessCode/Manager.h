@@ -1,5 +1,5 @@
 #include "Player.h"
-
+#include "Pipe.h"
 
 class Manager {
 private:
@@ -8,10 +8,10 @@ private:
 	Player* playerBlack;
 	Player* currPlayer;
 	Player* otherPlayer;
-	//Pipe  pipe
+	Pipe  pipe;
 
 public:
-	Manager();
+	Manager(Pipe& p);
 	~Manager();
 	void playGame(); //main()
 };
