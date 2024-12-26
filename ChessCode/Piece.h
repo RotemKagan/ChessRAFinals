@@ -6,7 +6,7 @@
 
 class Piece {
 protected: 
-	int color;
+	int color; //0 = white - 1 = black
 	std::string name;
 public:
 	Piece(int color, std::string name);
