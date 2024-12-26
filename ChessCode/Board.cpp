@@ -1,16 +1,76 @@
 #include "Board.h"
+#include "Pawn.h"
+#include "Rook.h"
+#include "Queen.h"
+#include "King.h"
+#include "Bishop.h"
+#include "Knight.h"
 //explain shortly how the board works
 //how to we convert from e5 to numbers of the board
 
 Board::Board(): board(WIDTH, std::vector<Piece*>(HEIGHT, 0)) {
+	
+
+}
+
+void Board::resetBoard() {
+	int i = 0;
+	int color1 = 0; //white;
+	int color2 = 1; //black
+
+	for (i = 0; i < WIDTH; i++) {
+		board[1][i] = new Pawn(color1, "Pawn"); // line of white pawns
+		board[HEIGHT - 2][i] = new Pawn(color2, "Pawn"); // line of black pawns
+	}
+
+	//white rooks
+	board[0][0] = new Rook(color1, "Rook");
+	board[0][7] = new Rook(color1, "Rook");
+
+	//black rooks
+	board[HEIGHT - 1][0] = new Rook(color2, "Rook");
+	board[HEIGHT - 1][7] = new Rook(color2, "Rook");
+
+	//white knights
+	board[0][1] = new Knight(color1, "Knight");
+	board[0][6] = new Knight(color1, "Knight");
+
+	//black knights
+	board[HEIGHT - 1][1] = new Knight(color1, "Knight");
+	board[HEIGHT - 1][6] = new Knight(color2, "Knight");
+
+	//white bishops
+	board[0][2] = new Bishop(color1, "Bishop");
+	board[0][5] = new Bishop(color1, "Bishop");
+
+	//black bishops
+	board[HEIGHT- 1][2] = new Bishop(color2, "Bishop");
+	board[HEIGHT - 1][5] = new Bishop(color2, "Bishop");
+
+	//white queen
+	board[0][3] = new Queen(color1, "Queen");
+
+	//black queen
+	board[HEIGHT - 1][3] = new Queen(color2, "Queen");
+
+	//white king
+	board[0][4] = new King(color1, "King");
+
+	//black king
+	board[HEIGHT - 1][4] = new King(color2, "King");
 }
 
 void Board::clearBoard() {
 	int i = 0;
 	int j = 0;
+	Piece* piece = NULL;
+
 	for (i = 0; i < WIDTH; i++) {
 		for (j = 0; j < HEIGHT; i++) {
-			board[i][j] = 0;
+			piece = board[i][j];
+			if (piece) {
+				delete piece;
+			}
 		}
 	}
 }

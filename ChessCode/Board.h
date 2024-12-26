@@ -17,8 +17,9 @@ public:
 	Board();
 
 	void clearBoard();
-	//what is this fucniton?
-	//void resetBoard();
+	
+	void resetBoard(); //this func will create each piece and place it to the board it its starting pos
+
 	bool makeMove(std::string move);
 	bool isCheck();
 

@@ -1,109 +1,519 @@
-﻿  Board.cpp
-C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Piece.h(14,42): error C2061: syntax error: identifier 'Board'
+﻿  Bishop.cpp
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(14,42): error C2061: syntax error: identifier 'Board'
+  Board.cpp
+  (compiling source file 'Bishop.cpp')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(15,41): error C2061: syntax error: identifier 'Board'
+  (compiling source file 'Bishop.cpp')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(18,45): error C2061: syntax error: identifier 'Board'
+  (compiling source file 'Bishop.cpp')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Bishop.h(10,15): error C3668: 'Bishop::makeMove': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'Bishop.cpp')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Bishop.h(11,15): error C3668: 'Bishop::isLegal': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'Bishop.cpp')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Bishop.h(12,15): error C3668: 'Bishop::isUnderCheck': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'Bishop.cpp')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(14,42): error C2061: syntax error: identifier 'Board'
   (compiling source file 'Board.cpp')
   
-C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Piece.h(15,41): error C2061: syntax error: identifier 'Board'
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(15,41): error C2061: syntax error: identifier 'Board'
   (compiling source file 'Board.cpp')
   
-C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Piece.h(16,25): error C2061: syntax error: identifier 'Board'
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(18,45): error C2061: syntax error: identifier 'Board'
   (compiling source file 'Board.cpp')
   
-C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Board.cpp(32,12): error C2660: 'Piece::isLegal': function does not take 2 arguments
-      C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Piece.h(15,15):
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Pawn.h(12,15): error C3668: 'Pawn::makeMove': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'Board.cpp')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Pawn.h(13,15): error C3668: 'Pawn::isLegal': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'Board.cpp')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Pawn.h(14,15): error C3668: 'Pawn::isUnderCheck': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'Board.cpp')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Rook.h(10,15): error C3668: 'Rook::makeMove': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'Board.cpp')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Rook.h(11,15): error C3668: 'Rook::isLegal': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'Board.cpp')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Rook.h(12,15): error C3668: 'Rook::isUnderCheck': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'Board.cpp')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Queen.h(10,15): error C3668: 'Queen::makeMove': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'Board.cpp')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Queen.h(11,15): error C3668: 'Queen::isLegal': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'Board.cpp')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Queen.h(12,15): error C3668: 'Queen::isUnderCheck': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'Board.cpp')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\King.h(10,15): error C3668: 'King::makeMove': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'Board.cpp')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\King.h(11,15): error C3668: 'King::isLegal': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'Board.cpp')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\King.h(12,15): error C3668: 'King::isUnderCheck': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'Board.cpp')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Bishop.h(10,15): error C3668: 'Bishop::makeMove': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'Board.cpp')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Bishop.h(11,15): error C3668: 'Bishop::isLegal': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'Board.cpp')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Bishop.h(12,15): error C3668: 'Bishop::isUnderCheck': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'Board.cpp')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(15,21): error C2259: 'Pawn': cannot instantiate abstract class
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Pawn.h(4,7):
+      see declaration of 'Pawn'
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(15,21):
+      due to following members:
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(15,21):
+      'void Piece::makeMove(std::string)': is abstract
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(14,15):
+      see declaration of 'Piece::makeMove'
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(15,21):
+      'bool Piece::isLegal(std::string)': is abstract
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(15,15):
       see declaration of 'Piece::isLegal'
-      C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Board.cpp(32,12):
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(15,21):
+      'bool Piece::isUnderCheck(std::string)': is abstract
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(18,15):
+      see declaration of 'Piece::isUnderCheck'
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(15,25): error C2259: 'Pawn': cannot instantiate abstract class
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Pawn.h(4,7):
+      see declaration of 'Pawn'
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(15,25):
+      due to following members:
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(15,25):
+      'void Piece::makeMove(std::string)': is abstract
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(14,15):
+      see declaration of 'Piece::makeMove'
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(15,25):
+      'bool Piece::isLegal(std::string)': is abstract
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(15,15):
+      see declaration of 'Piece::isLegal'
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(15,25):
+      'bool Piece::isUnderCheck(std::string)': is abstract
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(18,15):
+      see declaration of 'Piece::isUnderCheck'
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(16,30): error C2259: 'Pawn': cannot instantiate abstract class
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Pawn.h(4,7):
+      see declaration of 'Pawn'
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(16,30):
+      due to following members:
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(16,30):
+      'void Piece::makeMove(std::string)': is abstract
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(14,15):
+      see declaration of 'Piece::makeMove'
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(16,30):
+      'bool Piece::isLegal(std::string)': is abstract
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(15,15):
+      see declaration of 'Piece::isLegal'
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(16,30):
+      'bool Piece::isUnderCheck(std::string)': is abstract
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(18,15):
+      see declaration of 'Piece::isUnderCheck'
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(20,20): error C2259: 'Rook': cannot instantiate abstract class
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Rook.h(4,7):
+      see declaration of 'Rook'
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(20,20):
+      due to following members:
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(20,20):
+      'void Piece::makeMove(std::string)': is abstract
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(14,15):
+      see declaration of 'Piece::makeMove'
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(20,20):
+      'bool Piece::isLegal(std::string)': is abstract
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(15,15):
+      see declaration of 'Piece::isLegal'
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(20,20):
+      'bool Piece::isUnderCheck(std::string)': is abstract
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(18,15):
+      see declaration of 'Piece::isUnderCheck'
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(20,24): error C2259: 'Rook': cannot instantiate abstract class
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Rook.h(4,7):
+      see declaration of 'Rook'
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(20,24):
+      due to following members:
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(20,24):
+      'void Piece::makeMove(std::string)': is abstract
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(14,15):
+      see declaration of 'Piece::makeMove'
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(20,24):
+      'bool Piece::isLegal(std::string)': is abstract
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(15,15):
+      see declaration of 'Piece::isLegal'
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(20,24):
+      'bool Piece::isUnderCheck(std::string)': is abstract
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(18,15):
+      see declaration of 'Piece::isUnderCheck'
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(21,20): error C2259: 'Rook': cannot instantiate abstract class
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Rook.h(4,7):
+      see declaration of 'Rook'
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(21,20):
+      due to following members:
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(21,20):
+      'void Piece::makeMove(std::string)': is abstract
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(14,15):
+      see declaration of 'Piece::makeMove'
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(21,20):
+      'bool Piece::isLegal(std::string)': is abstract
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(15,15):
+      see declaration of 'Piece::isLegal'
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(21,20):
+      'bool Piece::isUnderCheck(std::string)': is abstract
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(18,15):
+      see declaration of 'Piece::isUnderCheck'
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(24,29): error C2259: 'Rook': cannot instantiate abstract class
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Rook.h(4,7):
+      see declaration of 'Rook'
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(24,29):
+      due to following members:
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(24,29):
+      'void Piece::makeMove(std::string)': is abstract
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(14,15):
+      see declaration of 'Piece::makeMove'
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(24,29):
+      'bool Piece::isLegal(std::string)': is abstract
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(15,15):
+      see declaration of 'Piece::isLegal'
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(24,29):
+      'bool Piece::isUnderCheck(std::string)': is abstract
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(18,15):
+      see declaration of 'Piece::isUnderCheck'
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(25,29): error C2259: 'Rook': cannot instantiate abstract class
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Rook.h(4,7):
+      see declaration of 'Rook'
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(25,29):
+      due to following members:
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(25,29):
+      'void Piece::makeMove(std::string)': is abstract
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(14,15):
+      see declaration of 'Piece::makeMove'
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(25,29):
+      'bool Piece::isLegal(std::string)': is abstract
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(15,15):
+      see declaration of 'Piece::isLegal'
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(25,29):
+      'bool Piece::isUnderCheck(std::string)': is abstract
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(18,15):
+      see declaration of 'Piece::isUnderCheck'
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(36,20): error C2259: 'Bishop': cannot instantiate abstract class
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Bishop.h(4,7):
+      see declaration of 'Bishop'
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(36,20):
+      due to following members:
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(36,20):
+      'void Piece::makeMove(std::string)': is abstract
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(14,15):
+      see declaration of 'Piece::makeMove'
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(36,20):
+      'bool Piece::isLegal(std::string)': is abstract
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(15,15):
+      see declaration of 'Piece::isLegal'
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(36,20):
+      'bool Piece::isUnderCheck(std::string)': is abstract
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(18,15):
+      see declaration of 'Piece::isUnderCheck'
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(36,26): error C2259: 'Bishop': cannot instantiate abstract class
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Bishop.h(4,7):
+      see declaration of 'Bishop'
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(36,26):
+      due to following members:
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(36,26):
+      'void Piece::makeMove(std::string)': is abstract
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(14,15):
+      see declaration of 'Piece::makeMove'
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(36,26):
+      'bool Piece::isLegal(std::string)': is abstract
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(15,15):
+      see declaration of 'Piece::isLegal'
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(36,26):
+      'bool Piece::isUnderCheck(std::string)': is abstract
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(18,15):
+      see declaration of 'Piece::isUnderCheck'
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(37,20): error C2259: 'Bishop': cannot instantiate abstract class
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Bishop.h(4,7):
+      see declaration of 'Bishop'
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(37,20):
+      due to following members:
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(37,20):
+      'void Piece::makeMove(std::string)': is abstract
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(14,15):
+      see declaration of 'Piece::makeMove'
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(37,20):
+      'bool Piece::isLegal(std::string)': is abstract
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(15,15):
+      see declaration of 'Piece::isLegal'
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(37,20):
+      'bool Piece::isUnderCheck(std::string)': is abstract
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(18,15):
+      see declaration of 'Piece::isUnderCheck'
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(40,20): error C2259: 'Bishop': cannot instantiate abstract class
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Bishop.h(4,7):
+      see declaration of 'Bishop'
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(40,20):
+      due to following members:
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(40,20):
+      'void Piece::makeMove(std::string)': is abstract
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(14,15):
+      see declaration of 'Piece::makeMove'
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(40,20):
+      'bool Piece::isLegal(std::string)': is abstract
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(15,15):
+      see declaration of 'Piece::isLegal'
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(40,20):
+      'bool Piece::isUnderCheck(std::string)': is abstract
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(18,15):
+      see declaration of 'Piece::isUnderCheck'
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(41,20): error C2259: 'Bishop': cannot instantiate abstract class
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Bishop.h(4,7):
+      see declaration of 'Bishop'
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(41,20):
+      due to following members:
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(41,20):
+      'void Piece::makeMove(std::string)': is abstract
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(14,15):
+      see declaration of 'Piece::makeMove'
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(41,20):
+      'bool Piece::isLegal(std::string)': is abstract
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(15,15):
+      see declaration of 'Piece::isLegal'
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(41,20):
+      'bool Piece::isUnderCheck(std::string)': is abstract
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(18,15):
+      see declaration of 'Piece::isUnderCheck'
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(71,12): error C2660: 'Piece::isLegal': function does not take 2 arguments
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(15,15):
+      see declaration of 'Piece::isLegal'
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(71,12):
       while trying to match the argument list '(std::string, Board)'
   
-C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Board.cpp(49,15): error C2660: 'Piece::isDoCheck': function does not take 1 arguments
-      C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Piece.h(16,15):
-      see declaration of 'Piece::isDoCheck'
-      C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Board.cpp(49,15):
-      while trying to match the argument list '(Board)'
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(90,15): error C2660: 'Piece::isUnderCheck': function does not take 2 arguments
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(18,15):
+      see declaration of 'Piece::isUnderCheck'
+      C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.cpp(90,15):
+      while trying to match the argument list '(std::string, Board)'
   
   Board.h
-C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Piece.h(14,42): error C2061: syntax error: identifier 'Board'
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(14,42): error C2061: syntax error: identifier 'Board'
   (compiling source file 'Board.h')
   
-C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Piece.h(15,41): error C2061: syntax error: identifier 'Board'
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(15,41): error C2061: syntax error: identifier 'Board'
   (compiling source file 'Board.h')
   
-C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Piece.h(16,25): error C2061: syntax error: identifier 'Board'
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(18,45): error C2061: syntax error: identifier 'Board'
   (compiling source file 'Board.h')
   
   King.cpp
-C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Piece.h(14,42): error C2061: syntax error: identifier 'Board'
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(14,42): error C2061: syntax error: identifier 'Board'
   (compiling source file 'King.cpp')
   
-C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Piece.h(15,41): error C2061: syntax error: identifier 'Board'
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(15,41): error C2061: syntax error: identifier 'Board'
   (compiling source file 'King.cpp')
   
-C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Piece.h(16,25): error C2061: syntax error: identifier 'Board'
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(18,45): error C2061: syntax error: identifier 'Board'
   (compiling source file 'King.cpp')
   
-C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\King.h(10,15): error C3668: 'King::makeMove': method with override specifier 'override' did not override any base class methods
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\King.h(10,15): error C3668: 'King::makeMove': method with override specifier 'override' did not override any base class methods
   (compiling source file 'King.cpp')
   
-C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\King.h(11,15): error C3668: 'King::isLegal': method with override specifier 'override' did not override any base class methods
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\King.h(11,15): error C3668: 'King::isLegal': method with override specifier 'override' did not override any base class methods
   (compiling source file 'King.cpp')
   
-C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\King.h(12,15): error C3668: 'King::isDoCheck': method with override specifier 'override' did not override any base class methods
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\King.h(12,15): error C3668: 'King::isUnderCheck': method with override specifier 'override' did not override any base class methods
   (compiling source file 'King.cpp')
   
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\King.cpp(62,17): error C2082: redefinition of formal parameter 'pos'
+  Maneger.cpp
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.h(15,26): error C2065: 'Piece': undeclared identifier
+  (compiling source file 'Maneger.cpp')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.h(15,32): error C2059: syntax error: '>'
+  (compiling source file 'Maneger.cpp')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.h(26,7): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'Maneger.cpp')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.h(26,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'Maneger.cpp')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.h(26,34): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'Maneger.cpp')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.h(27,33): error C2061: syntax error: identifier 'Piece'
+  (compiling source file 'Maneger.cpp')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Maneger.cpp(5,8): error C2059: syntax error: ';'
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Maneger.cpp(7,11): error C2761: 'Maneger::~Maneger(void)': redeclaration of member is not allowed
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Maneger.cpp(8,15): error C2761: 'void Maneger::playGame(void)': redeclaration of member is not allowed
+  Maneger.h
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.h(15,26): error C2065: 'Piece': undeclared identifier
+  (compiling source file 'Maneger.h')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.h(15,32): error C2059: syntax error: '>'
+  (compiling source file 'Maneger.h')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.h(26,7): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'Maneger.h')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.h(26,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'Maneger.h')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.h(26,34): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'Maneger.h')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.h(27,33): error C2061: syntax error: identifier 'Piece'
+  (compiling source file 'Maneger.h')
+  
+  Pawn.cpp
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(14,42): error C2061: syntax error: identifier 'Board'
+  (compiling source file 'Pawn.cpp')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(15,41): error C2061: syntax error: identifier 'Board'
+  (compiling source file 'Pawn.cpp')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(18,45): error C2061: syntax error: identifier 'Board'
+  (compiling source file 'Pawn.cpp')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Pawn.h(12,15): error C3668: 'Pawn::makeMove': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'Pawn.cpp')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Pawn.h(13,15): error C3668: 'Pawn::isLegal': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'Pawn.cpp')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Pawn.h(14,15): error C3668: 'Pawn::isUnderCheck': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'Pawn.cpp')
+  
+  Pawn.h
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(14,42): error C2061: syntax error: identifier 'Board'
+  (compiling source file 'Pawn.h')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(15,41): error C2061: syntax error: identifier 'Board'
+  (compiling source file 'Pawn.h')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(18,45): error C2061: syntax error: identifier 'Board'
+  (compiling source file 'Pawn.h')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Pawn.h(12,15): error C3668: 'Pawn::makeMove': method with override specifier 'override' did not override any base class methods
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Pawn.h(13,15): error C3668: 'Pawn::isLegal': method with override specifier 'override' did not override any base class methods
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Pawn.h(14,15): error C3668: 'Pawn::isUnderCheck': method with override specifier 'override' did not override any base class methods
   piece.cpp
-C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Board.h(13,26): error C2065: 'Piece': undeclared identifier
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.h(15,26): error C2065: 'Piece': undeclared identifier
   (compiling source file 'piece.cpp')
   
-C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Board.h(13,32): error C2059: syntax error: '>'
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.h(15,32): error C2059: syntax error: '>'
   (compiling source file 'piece.cpp')
   
-C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Board.h(23,7): error C2143: syntax error: missing ';' before '*'
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.h(26,7): error C2143: syntax error: missing ';' before '*'
   (compiling source file 'piece.cpp')
   
-C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Board.h(23,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.h(26,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
   (compiling source file 'piece.cpp')
   
-C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Board.h(23,34): error C2238: unexpected token(s) preceding ';'
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.h(26,34): error C2238: unexpected token(s) preceding ';'
   (compiling source file 'piece.cpp')
   
-C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Board.h(24,33): error C2061: syntax error: identifier 'Piece'
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.h(27,33): error C2061: syntax error: identifier 'Piece'
   (compiling source file 'piece.cpp')
   
   Piece.h
-C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Board.h(13,26): error C2065: 'Piece': undeclared identifier
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.h(15,26): error C2065: 'Piece': undeclared identifier
   (compiling source file 'Piece.h')
   
-C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Board.h(13,32): error C2059: syntax error: '>'
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.h(15,32): error C2059: syntax error: '>'
   (compiling source file 'Piece.h')
   
-C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Board.h(23,7): error C2143: syntax error: missing ';' before '*'
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.h(26,7): error C2143: syntax error: missing ';' before '*'
   (compiling source file 'Piece.h')
   
-C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Board.h(23,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.h(26,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
   (compiling source file 'Piece.h')
   
-C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Board.h(23,34): error C2238: unexpected token(s) preceding ';'
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.h(26,34): error C2238: unexpected token(s) preceding ';'
   (compiling source file 'Piece.h')
   
-C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Board.h(24,33): error C2061: syntax error: identifier 'Piece'
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.h(27,33): error C2061: syntax error: identifier 'Piece'
   (compiling source file 'Piece.h')
+  
+  Player.cpp
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.h(15,26): error C2065: 'Piece': undeclared identifier
+  (compiling source file 'Player.cpp')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.h(15,32): error C2059: syntax error: '>'
+  (compiling source file 'Player.cpp')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.h(26,7): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'Player.cpp')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.h(26,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'Player.cpp')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.h(26,34): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'Player.cpp')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Board.h(27,33): error C2061: syntax error: identifier 'Piece'
+  (compiling source file 'Player.cpp')
+  
+  Queen.cpp
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(14,42): error C2061: syntax error: identifier 'Board'
+  (compiling source file 'Queen.cpp')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(15,41): error C2061: syntax error: identifier 'Board'
+  (compiling source file 'Queen.cpp')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(18,45): error C2061: syntax error: identifier 'Board'
+  (compiling source file 'Queen.cpp')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Queen.h(10,15): error C3668: 'Queen::makeMove': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'Queen.cpp')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Queen.h(11,15): error C3668: 'Queen::isLegal': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'Queen.cpp')
+  
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Queen.h(12,15): error C3668: 'Queen::isUnderCheck': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'Queen.cpp')
   
   Rook.cpp
-C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Piece.h(14,42): error C2061: syntax error: identifier 'Board'
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(14,42): error C2061: syntax error: identifier 'Board'
   (compiling source file 'Rook.cpp')
   
-C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Piece.h(15,41): error C2061: syntax error: identifier 'Board'
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(15,41): error C2061: syntax error: identifier 'Board'
   (compiling source file 'Rook.cpp')
   
-C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Piece.h(16,25): error C2061: syntax error: identifier 'Board'
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Piece.h(18,45): error C2061: syntax error: identifier 'Board'
   (compiling source file 'Rook.cpp')
   
-C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Rook.h(10,15): error C3668: 'Rook::makeMove': method with override specifier 'override' did not override any base class methods
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Rook.h(10,15): error C3668: 'Rook::makeMove': method with override specifier 'override' did not override any base class methods
   (compiling source file 'Rook.cpp')
   
-C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Rook.h(11,15): error C3668: 'Rook::isLegal': method with override specifier 'override' did not override any base class methods
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Rook.h(11,15): error C3668: 'Rook::isLegal': method with override specifier 'override' did not override any base class methods
   (compiling source file 'Rook.cpp')
   
-C:\Users\Cyber_User\Documents\chessProject\ChessRAFinals\ChessCode\Rook.h(12,15): error C3668: 'Rook::isDoCheck': method with override specifier 'override' did not override any base class methods
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Rook.h(12,15): error C3668: 'Rook::isUnderCheck': method with override specifier 'override' did not override any base class methods
   (compiling source file 'Rook.cpp')
   
   Generating Code...
