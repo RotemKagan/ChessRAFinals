@@ -10,6 +10,8 @@
 
 // White start at the first and second rows, and Black at the seventh and eighth
 
+class Piece;
+
 class Board {
 private:
 	std::vector<std::vector<Piece*>> board;

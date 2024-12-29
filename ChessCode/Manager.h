@@ -1,5 +1,6 @@
 #include "Player.h"
 #include "Pipe.h"
+#include "Board.h"
 
 class Manager {
 private:
@@ -13,6 +14,6 @@ private:
 public:
 	Manager(Pipe& p);
 	~Manager();
-	std::string getStartMsg(bool isWhiteFirst);
+	char* getStartMsg(bool isWhiteFirst);
 	void playGame(); //main()
 };

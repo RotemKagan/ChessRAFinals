@@ -1,6 +1,9 @@
 #include "Manager.h"
 #include <iostream>
 #include <cctype>
+#include <cstring>
+
+
 
 Manager::Manager(Pipe& p) {
 	playerWhite = new Player(0);
@@ -13,13 +16,13 @@ Manager::~Manager() {
 	board->clearBoard();
 }
 
-std::string Manager::getStartMsg(bool isWhiteFirst) { //the first msg that the front end needs
+char* Manager::getStartMsg(bool isWhiteFirst) { //the first msg that the front end needs
 	std::string lastP = "PPPPPPPPRNBQKBNR";
 	std::string nonP = "################################";
 	std::string firstP = "rnbqkbnrpppppppp";
-	std::string ret = "";
-
-	ret = firstP + nonP + lastP;
+	std::string full = "";
+	char msg[] = "#PPPPPPPPRNBQKBNR###############################rnbqkbnrpppppppp";
+	char* ret = msg;
 	return ret;
 }
 
@@ -27,11 +30,9 @@ std::string Manager::getStartMsg(bool isWhiteFirst) { //the first msg that the f
 void Manager::playGame() { //main()
 	pipe.connect();
 
-	std::string msgToGrp = getStartMsg(true);
+	char* msgToGrp = getStartMsg(true);
 
-	char* strToGrp = msgToGrp.c_str()
-
-	pipe.sendMessageToGraphics(msgToGrp.c_str());
+	pipe.sendMessageToGraphics(msgToGrp);
 
 
 

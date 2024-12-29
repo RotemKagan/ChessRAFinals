@@ -49,12 +49,12 @@ bool King::isLegal(std::string move, Board board) {
 
     return true;
 }
-bool King::isUnderCheck(std::string pos, Board board) {
+bool King::isUnderCheck(std::string cPos, Board board) {
     int i = 0;
     Piece* piece = NULL;
     //converts
-    int currRow = pos[1] - '1';
-    int currCol = pos[0] - 'a';
+    int currRow = cPos[1] - '1';
+    int currCol = cPos[0] - 'a';
 
     int newRow = 0;
     int newCol = 0;

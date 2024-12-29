@@ -4,6 +4,8 @@
 #include <iostream>
 #include "Board.h"
 
+class Board;
+
 class Piece {
 protected: 
 	int color; //0 = white - 1 = black
