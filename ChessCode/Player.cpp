@@ -12,3 +12,10 @@ Player::~Player() {
 int Player::getColor()const {
 	return color;
 }
+
+void Player::setKing(Piece* _king) {
+	king = _king;
+}
+Piece* Player::getKing()const {
+	return king;
+}

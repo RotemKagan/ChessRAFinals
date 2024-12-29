@@ -132,3 +132,4 @@ bool King::isUnderCheck(std::string cPos, Board board) {
         }
     }
 }
+

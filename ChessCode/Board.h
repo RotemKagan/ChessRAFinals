@@ -4,6 +4,10 @@
 #define WIDTH 8
 #define HEIGHT 8
 
+
+
+
+
 #include <iostream>
 #include <vector>
 #include "Piece.h"
@@ -24,6 +28,10 @@ public:
 
 	bool makeMove(std::string move);
 	bool isCheck();
+
+	bool isLegal(std::string move);
+
+	
 
 	Piece* getPiece(std::string pos);
 	void setPiece(std::string pos, Piece* piece);

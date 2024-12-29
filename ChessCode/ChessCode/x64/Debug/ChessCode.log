@@ -1,7 +1,6 @@
-﻿  Manager.cpp
-  Manager.h
+﻿  Manager.h
+  Player.cpp
   Generating Code...
-C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\Manager.cpp(26,1): warning C4172: returning address of local variable or temporary : msg
 ChessCode\x64\Debug\Board.obj : warning LNK4042: object specified more than once; extras ignored
 ChessCode\x64\Debug\Manager.obj : warning LNK4042: object specified more than once; extras ignored
 ChessCode\x64\Debug\Pawn.obj : warning LNK4042: object specified more than once; extras ignored
@@ -37,5 +36,7 @@ King.obj : error LNK2001: unresolved external symbol "public: class Piece * __cd
 Knight.obj : error LNK2001: unresolved external symbol "public: class Piece * __cdecl Board::getPiece(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?getPiece@Board@@QEAAPEAVPiece@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
 Pawn.obj : error LNK2001: unresolved external symbol "public: class Piece * __cdecl Board::getPiece(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?getPiece@Board@@QEAAPEAVPiece@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
 King.obj : error LNK2019: unresolved external symbol "public: class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl Piece::getName(void)const " (?getName@Piece@@QEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ) referenced in function "public: virtual bool __cdecl King::isUnderCheck(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class Board)" (?isUnderCheck@King@@UEAA_NV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@VBoard@@@Z)
-Manager.obj : error LNK2019: unresolved external symbol "public: void __cdecl Board::clearBoard(void)" (?clearBoard@Board@@QEAAXXZ) referenced in function "public: __cdecl Manager::~Manager(void)" (??1Manager@@QEAA@XZ)
-C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\x64\Debug\ChessCode.exe : fatal error LNK1120: 7 unresolved externals
+Source.obj : error LNK2019: unresolved external symbol "public: __cdecl Manager::Manager(class Pipe &)" (??0Manager@@QEAA@AEAVPipe@@@Z) referenced in function main
+Source.obj : error LNK2019: unresolved external symbol "public: __cdecl Manager::~Manager(void)" (??1Manager@@QEAA@XZ) referenced in function main
+Source.obj : error LNK2019: unresolved external symbol "public: void __cdecl Manager::playGame(void)" (?playGame@Manager@@QEAAXXZ) referenced in function main
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\gitPull\ChessRAFinals\ChessCode\x64\Debug\ChessCode.exe : fatal error LNK1120: 9 unresolved externals

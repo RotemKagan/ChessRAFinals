@@ -135,3 +135,28 @@ void Board::setPiece(std::string pos, Piece* piece) {
 
 	board[col][row] = piece;
 }
+
+
+bool Board::isLegal(std::string move) {
+	std::string dest = move.substr(2, 2);
+
+	Piece* curPiece;
+
+	int startCol = move[0] - 'a';
+	int startRow = move[1] - '1';
+	int endCol = move[2] - 'a';
+	int endRow = move[3] - '1';
+
+	std::string pos = "";
+	pos = move[0] + move[1];
+
+
+	curPiece = getPiece(pos);
+
+	if (!curPiece) {
+		return false;
+	}
+
+	return curPiece->isLegal(move, *this);
+
+}
