@@ -13,5 +13,6 @@ private:
 public:
 	Manager(Pipe& p);
 	~Manager();
+	std::string getStartMsg(bool isWhiteFirst);
 	void playGame(); //main()
 };
