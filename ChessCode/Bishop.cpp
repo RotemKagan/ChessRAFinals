@@ -11,7 +11,7 @@ void Bishop::makeMove(std::string move, Board board)
 {
 	board.makeMove(move);
 }
-bool Bishop::isLegal(std::string move, Board board)
+int Bishop::isLegal(std::string move, Board board)
 {
     std::string dest = std::string(1, move[2]) + std::string(1, move[3]);
     int startCol = move[0] - 'a';  

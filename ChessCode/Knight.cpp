@@ -10,7 +10,7 @@ void Knight::makeMove(std::string move, Board board)
 {
 	board.makeMove(move);
 }
-bool Knight::isLegal(std::string move, Board board) 
+int Knight::isLegal(std::string move, Board board)
 {
     std::string dest = move.substr(2, 2);
     //converts

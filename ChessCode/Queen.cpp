@@ -10,7 +10,7 @@ void Queen::makeMove(std::string move, Board board)
 {
 	board.makeMove(move);
 }
-bool Queen::isLegal(std::string move, Board board)
+int Queen::isLegal(std::string move, Board board)
 {
     std::string dest = move.substr(2, 2);
 	int startCol = move[0] - 'a';

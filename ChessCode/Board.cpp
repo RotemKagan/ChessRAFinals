@@ -89,9 +89,10 @@ bool Board::makeMove(std::string move) {
 		return false;
 	}
 	
+	/*
 	if (!cur->isLegal(move, *this)) {
 		return false;
-	}
+	}*/
 
 	setPiece(futPos, cur);
 	setPiece(curPos, NULL);
@@ -137,15 +138,20 @@ void Board::setPiece(std::string pos, Piece* piece) {
 }
 
 
-bool Board::isLegal(std::string move) {
+int Board::isLegal(std::string move, Manager* manager) {
 	std::string dest = move.substr(2, 2);
-
+	int legalCode = 0;
 	Piece* curPiece;
+	int color = 0;
 
 	int startCol = move[0] - 'a';
 	int startRow = move[1] - '1';
 	int endCol = move[2] - 'a';
 	int endRow = move[3] - '1';
+
+	std::string reverseMove = ""; //in case we need to return to the starting pos;
+
+	reverseMove = (endCol + 'a') + (endRow + '1') + (startCol + 'a') + (startRow + '1');
 
 	std::string pos = "";
 	pos = move[0] + move[1];
@@ -153,10 +159,23 @@ bool Board::isLegal(std::string move) {
 
 	curPiece = getPiece(pos);
 
+
 	if (!curPiece) {
 		return false;
 	}
 
-	return curPiece->isLegal(move, *this);
+	color = curPiece->getColor();
+
+	legalCode = curPiece->isLegal(move, *this);
+
+	if (legalCode >= 2 || legalCode <= 7) { //if move ilegal
+		return legalCode;
+	}
+
+	makeMove(move);
+
+	manager->getCurPlayer()->getKing()->isUnderCheck(); //checks if after the current move the king will be in check 
+
+
 
 }

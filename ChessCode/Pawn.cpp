@@ -15,7 +15,7 @@ void Pawn::makeMove(std::string move, Board board) {
 }
 
 
-bool Pawn::isLegal(std::string move, Board board) {
+int Pawn::isLegal(std::string move, Board board) {
 	Piece* dPiece = NULL;
 	//converting 
 	std::string dest = move.substr(2, 2);

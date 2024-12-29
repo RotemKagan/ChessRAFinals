@@ -11,6 +11,7 @@
 #include <iostream>
 #include <vector>
 #include "Piece.h"
+#include "Manager.h"
 
 // White start at the first and second rows, and Black at the seventh and eighth
 
@@ -29,7 +30,7 @@ public:
 	bool makeMove(std::string move);
 	bool isCheck();
 
-	bool isLegal(std::string move);
+	int isLegal(std::string move, Manager* manager);
 
 	
 

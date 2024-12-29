@@ -22,4 +22,8 @@ public:
 	~Manager();
 	char* getStartMsg(bool isWhiteFirst);
 	void playGame(); //main()
+
+	Player* getCurPlayer()const;
+	Player* getOtherPlayer()const;
+
 };

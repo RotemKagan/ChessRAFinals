@@ -7,13 +7,26 @@
 
 Manager::Manager(Pipe& p) {
 	playerWhite = new Player(0);
+	currPlayer = NULL;
+	otherPlayer = NULL;
 	playerBlack = new Player(1);
 	pipe = p;
+	board = new Board();
+
 }
 Manager::~Manager() {
 	delete playerWhite;
 	delete playerBlack;
 	board->clearBoard();
+	delete board;
+}
+
+Player* Manager::getCurPlayer()const {
+	return currPlayer;
+}
+
+Player* Manager::getOtherPlayer()const {
+	return otherPlayer;
 }
 
 char* Manager::getStartMsg(bool isWhiteFirst) { //the first msg that the front end needs
@@ -30,19 +43,19 @@ char* Manager::getStartMsg(bool isWhiteFirst) { //the first msg that the front e
 void Manager::playGame() { //main()
 	pipe.connect();
 
-	Board* board;
+	this->board->resetBoard(); //create the pieces in there starting pos on the board
 
-	board->resetBoard(); //create the pieces in there starting pos on the board
-
-	char* msgToGrp = getStartMsg(true);
+	char* firstMsgToGrp = getStartMsg(true);
 	std::string userMove = "";
 	std::string pos = "";
 
 	Player* tempPlayer = NULL;
 
-	bool isLegal = false;
+	int isLegal = false;
 
-	std::string msgToGraphics = "";
+	char msgToGrp[2] = "";
+
+	char* msgToGrpPointer = NULL;
 
 	pos = WHITE_K_COL + WHITE_K_ROW;
 	playerWhite->setKing(board->getPiece(pos));
@@ -50,7 +63,7 @@ void Manager::playGame() { //main()
 	pos = BLACK_K_COL + BLACK_K_ROW;
 	playerBlack->setKing(board->getPiece(pos));
 
-	pipe.sendMessageToGraphics(msgToGrp); // sends first msg to forntend, so the graphics will be initialized
+	pipe.sendMessageToGraphics(firstMsgToGrp); // sends first msg to forntend, so the graphics will be initialized
 
 	currPlayer = playerWhite;
 	otherPlayer = playerBlack;
@@ -59,18 +72,24 @@ void Manager::playGame() { //main()
 		userMove = pipe.getMessageFromGraphics();
 		isLegal = board->isLegal(userMove);
 
-		if (isLegal) {
+		if (isLegal < 2 || isLegal > 7) { //if the move is legal
 			board->makeMove(userMove);
 
+			//switching the curent players
 			tempPlayer = currPlayer;
 			currPlayer = otherPlayer;
 			otherPlayer = tempPlayer;
-
-
-
 		}
+
+		msgToGrp[0] = isLegal + '0';
+		msgToGrp[1] = NULL;
+
+		msgToGrpPointer = msgToGrp;
+
+		pipe.sendMessageToGraphics(msgToGrpPointer);
 
 	}
 
+	delete board;
 	pipe.close();
 }

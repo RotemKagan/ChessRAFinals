@@ -10,7 +10,7 @@ King::~King() {
 void King::makeMove(std::string move, Board board) {
 	board.makeMove(move);
 }
-bool King::isLegal(std::string move, Board board) {
+int King::isLegal(std::string move, Board board) {
     std::string curr = "";
     std::string dest = "";
     dest = move[2] + move[3];
