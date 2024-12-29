@@ -14,20 +14,32 @@ void Bishop::makeMove(std::string move, Board board)
 int Bishop::isLegal(std::string move, Board board)
 {
     std::string dest = std::string(1, move[2]) + std::string(1, move[3]);
+    std::string src = std::string(1, move[0]) + std::string(1, move[1]);
     int startCol = move[0] - 'a';  
     int startRow = move[1] - '1';
     int endCol = move[2] - 'a';  
     int endRow = move[3] - '1'; 
-   
+    if (board.getPiece(src)->getName()!="Bishop")
+    {
+        return 2;
+    }
+    if ((startCol < 1 || startCol>8) || (endCol < 1 || endCol>8)) 
+    {
+        return 5;
+    }
+    if ((startRow < 1 || startRow>8) || (endRow < 1 || endRow>8))
+    {
+        return 5;
+    }
     // if not diagonal
     if (abs(endCol - startCol) != abs(endRow - startRow)) 
     {
-        return false;
+        return 6;
     }
     //if same place
     if (startCol == endCol && startRow==endRow) 
     {
-        return false;
+        return 7;
     }
     int isUpCol;
     int isUpRow;
@@ -59,7 +71,7 @@ int Bishop::isLegal(std::string move, Board board)
         std::string pos = std::string(1, 'a' + col) + char(row + 1);
         if (board.getPiece(pos) != nullptr)
         {  
-            return false;
+            return 6;
         }
         //move to the next square in the path
         col += isUpCol;
@@ -69,10 +81,10 @@ int Bishop::isLegal(std::string move, Board board)
     Piece* targetPiece = board.getPiece(dest);
     if (targetPiece != nullptr && targetPiece->getColor() == this->getColor()) 
     {
-        return false; 
+        return 3; 
     }
-
-    return true;
+    //didnt check if it causes check
+    return 0;
 }
 
 bool Bishop::isUnderCheck(std::string pos, Board board) 

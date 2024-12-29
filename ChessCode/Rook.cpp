@@ -18,24 +18,35 @@ void Rook::makeMove(std::string move, Board board)
 int Rook::isLegal(std::string move, Board board)
 {
     std::string dest = std::string(1, move[2]) + std::string(1, move[3]);
-    std::string curr = std::string(1, move[0]) + std::string(1, move[1]);
-    //converts
-    int currRow = curr[1] - '1'; 
-    int currCol = curr[0] - 'a';
-    int destRow = dest[1] - '1';
-    int destCol = dest[0] - 'a';
-    //moving to same place
-    if (currRow == destRow && currCol == destCol) 
+    std::string src = std::string(1, move[0]) + std::string(1, move[1]);
+    int startCol = move[0] - 'a';
+    int startRow = move[1] - '1';
+    int endCol = move[2] - 'a';
+    int endRow = move[3] - '1';
+    if (board.getPiece(src)->getName() != "Queen")
     {
-        return false;
+        return 2;
+    }
+    if ((startCol < 1 || startCol>8) || (endCol < 1 || endCol>8))
+    {
+        return 5;
+    }
+    if ((startRow < 1 || startRow>8) || (endRow < 1 || endRow>8))
+    {
+        return 5;
+    }
+    //moving to same place
+    if (startRow == endRow && startCol == endCol) 
+    {
+        return 7;
     }
     //moving not in col or row
-    if (currRow != destRow && currCol != destCol) 
+    if (startRow != endRow && startCol != endCol) 
     {
-        return false;
+        return 6;
     }
     //row move
-    if (currRow == destRow) 
+    if (startRow == endRow) 
     { 
         int startCol = std::min(currCol, destCol) + 1;
         int endCol = std::max(currCol, destCol);
@@ -44,15 +55,15 @@ int Rook::isLegal(std::string move, Board board)
         for (i = startCol; i < endCol; i++) 
         {
             //create position and check it, the 1 in the beginning is str length
-            pos = std::string(1, 'a' + i) + char(currRow + 1);
+            pos = std::string(1, 'a' + i) + char(startRow + 1);
             if (board.getPiece(pos) != nullptr) 
             {
-                return false; 
+                return 6; 
             }
         }
     }
     //col move
-    else if (currCol == destCol) 
+    else if (startCol == endCol) 
     { 
         int startRow = std::min(currRow, destRow) + 1;
         int endRow = std::max(currRow, destRow);
@@ -60,10 +71,10 @@ int Rook::isLegal(std::string move, Board board)
         for (i= startRow; i < endRow; i++) 
         {
             //create position and check it, the 1 in the beginning is str length
-            std::string pos = std::string(1, 'a' + currCol) + char(i + 1);
+            std::string pos = std::string(1, 'a' + startCol) + char(i + 1);
             if (board.getPiece(pos) != nullptr) 
             {
-                return false;
+                return 6;
             }
         }
     }
@@ -71,9 +82,9 @@ int Rook::isLegal(std::string move, Board board)
     Piece* target = board.getPiece(dest);
     if (target != nullptr && target->getColor() == this->getColor()) 
     {
-        return false; 
+        return 3; 
     }
-    return true;
+    return 0;
 }
 
 bool Rook::isUnderCheck(std::string pos, Board board) {

@@ -1,4 +1,5 @@
 #include "Queen.h"
+#include <iostream>
 Queen::Queen(int color, std::string name)
 	:Piece(color, name)
 {
@@ -12,20 +13,33 @@ void Queen::makeMove(std::string move, Board board)
 }
 int Queen::isLegal(std::string move, Board board)
 {
-    std::string dest = move.substr(2, 2);
-	int startCol = move[0] - 'a';
-	int startRow = move[1] - '1';
-	int endCol = move[2] - 'a';
-	int endRow = move[3] - '1';
+    std::string dest = std::string(1, move[2]) + std::string(1, move[3]);
+    std::string src = std::string(1, move[0]) + std::string(1, move[1]);
+    int startCol = move[0] - 'a';
+    int startRow = move[1] - '1';
+    int endCol = move[2] - 'a';
+    int endRow = move[3] - '1';
+    if (board.getPiece(src)->getName() != "Queen")
+    {
+        return 2;
+    }
+    if ((startCol < 1 || startCol>8) || (endCol < 1 || endCol>8))
+    {
+        return 5;
+    }
+    if ((startRow < 1 || startRow>8) || (endRow < 1 || endRow>8))
+    {
+        return 5;
+    }
 	//if same place
 	if (startCol == endCol && startRow == endRow)
 	{
-		return false;
+		return 7;
 	}
 	//if not digonal or in col or row
 	if ((abs(endCol - startCol) != abs(endRow - startRow)) && (startRow != endRow && startCol != endCol))
 	{
-		return false;
+		return 6;
 	}
     //if the move was digonal check like in the bishop
     if (abs(endCol - startCol) == abs(endRow - startRow))
@@ -61,7 +75,7 @@ int Queen::isLegal(std::string move, Board board)
             std::string pos = std::string(1, 'a' + col) + char(row + 1);
             if (board.getPiece(pos) != nullptr)
             {
-                return false;
+                return 6;
             }
             //move to the next square in the path
             col += isUpCol;
@@ -83,15 +97,15 @@ int Queen::isLegal(std::string move, Board board)
                 pos = std::string(1, 'a' + i) + char(startRow + 1);
                 if (board.getPiece(pos) != nullptr)
                 {
-                    return false;
+                    return 6;
                 }
             }
         }
         //col move
         else if (startCol == endCol)
         {
-            int start = std::min(startRow, endRow) + 1;
-            int end = std::max(startRow, endRow);
+            int start = std::min((int)startRow, (int)endRow) + 1;
+            int end = std::max((int)startRow, (int)endRow);
             int i = 0;
             for (i = start; i < end; i++)
             {
@@ -99,7 +113,7 @@ int Queen::isLegal(std::string move, Board board)
                 std::string pos = std::string(1, 'a' + startCol) + char(i + 1);
                 if (board.getPiece(pos) != nullptr)
                 {
-                    return false;
+                    return 6;
                 }
             }
         }
@@ -108,9 +122,9 @@ int Queen::isLegal(std::string move, Board board)
     Piece* targetPiece = board.getPiece(dest);
     if (targetPiece != nullptr && targetPiece->getColor() == this->getColor())
     {
-        return false;
+        return 3;
     }
-    return true;
+    return 0;
 }
 bool Queen::isUnderCheck(std::string pos, Board board) 
 {

@@ -13,4 +13,5 @@ public:
 	int getColor()const;
 	void setKing(Piece* _king);
 	Piece* getKing()const;
+	std::string KingPoistionOfPlayer(Board board);
 };

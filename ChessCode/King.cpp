@@ -11,43 +11,53 @@ void King::makeMove(std::string move, Board board) {
 	board.makeMove(move);
 }
 int King::isLegal(std::string move, Board board) {
-    std::string curr = "";
-    std::string dest = "";
-    dest = move[2] + move[3];
-    curr = move[0] + move[1];
+    std::string dest = std::string(1, move[2]) + std::string(1, move[3]);
+    std::string curr = std::string(1, move[0]) + std::string(1, move[1]);
+    int startCol = move[0] - 'a';
+    int startRow = move[1] - '1';
+    int endCol = move[2] - 'a';
+    int endRow = move[3] - '1';
+    if (board.getPiece(curr)->getName() != "King")
+    {
+        return 2;
+    }
+    if ((startCol < 1 || startCol>8) || (endCol < 1 || endCol>8))
+    {
+        return 5;
+    }
+    if ((startRow < 1 || startRow>8) || (endRow < 1 || endRow>8))
+    {
+        return 5;
+    }
 
     Piece* piece = NULL;
-
-    //converts
-    int currRow = curr[1] - '1';
-    int currCol = curr[0] - 'a';
-    int destRow = dest[1] - '1';
-    int destCol = dest[0] - 'a';
     //checks for same move
-    if (currRow == destRow && currCol == destCol)
+    if (startRow == endRow && startCol == endCol)
     {
-        return false;
+        return 7;
     }
 
     //checks if the move is in 1 move range, if not returns false
-    if (std::abs(currRow - destRow) > 1 || std::abs(currCol - destCol)) {
-        return false;
+    if (std::abs(startRow - endRow) > 1 || std::abs(startCol - endCol)) 
+    {
+        return 6;
     }
 
     // checks if there is a piece same color in dest pos, if yes returns false
     piece = board.getPiece(dest);
     if (piece) {
-        if (piece->getColor() == this->getColor()) {
-            return false;
+        if (piece->getColor() == this->getColor()) 
+        {
+            return 3;
         }
     }
 
     // checks if there check in dest pos
     if (isUnderCheck(dest, board)) {
-        return false;
+        return 4;
     }
 
-    return true;
+    return 0;
 }
 bool King::isUnderCheck(std::string cPos, Board board) {
     int i = 0;
