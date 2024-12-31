@@ -255,5 +255,6 @@ bool King::isUnderCheck(std::string cPos, Board board)
         }
         delete(kngiht);
     }
+    return false;
 }
 
