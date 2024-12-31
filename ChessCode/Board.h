@@ -31,8 +31,7 @@ public:
 	bool isCheck();
 
 	int isLegal(std::string move, Manager* manager);
-
-	
+	std::string getPostionOfPeace(std::string Name, int color);
 
 	Piece* getPiece(std::string pos);
 	void setPiece(std::string pos, Piece* piece);

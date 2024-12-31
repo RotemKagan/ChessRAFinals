@@ -126,7 +126,28 @@ Piece* Board::getPiece(std::string pos) { //example of pos - "e5"
 
 	return	board[col][row];
 }
-
+//a function we need to return all oponents pieces by requested name
+std::string Board::getPostionOfPeace(std::string Name, int color)
+{
+	std::string allPositions;
+	for (char j = 'a'; j <= 'z'; j++)
+	{
+		for (int i = 1; i <= 8; i++)
+		{
+			std::string position = std::string(1, j) + std::to_string(i);
+			Piece* piece = this->getPiece(position);
+			if (piece && piece->getName() == Name && piece->getColor()!=color)
+			{
+				if (!allPositions.empty()) 
+				{
+					allPositions += ","; 
+				}
+				allPositions += position;
+			}
+		}
+	}
+	return allPositions;
+}
 void Board::setPiece(std::string pos, Piece* piece) {
 	int col = 0;
 	int row = 0;
