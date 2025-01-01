@@ -78,6 +78,7 @@ bool King::isUnderCheck(std::string cPos, Board board)
     std::string BishopPos = "";
     std::string RookPos = "";
     std::string Move = "";
+    std::string lastPos = "";
     //use the help fucntion to get all the postions of oposite side pieces
     QueenPos = board.getPostionOfPeace("Queen", this->color);
     KnightPos = board.getPostionOfPeace("Knight", this->color);
@@ -104,7 +105,7 @@ bool King::isUnderCheck(std::string cPos, Board board)
         delete (pawn);
         start = end + 1;
     }
-    std::string lastPos = PawnPos.substr(start);
+    lastPos = PawnPos.substr(start);
     if (!lastPos.empty()) 
     {
         Piece* piece= board.getPiece(lastPos);
@@ -121,6 +122,7 @@ bool King::isUnderCheck(std::string cPos, Board board)
     //now for the bishop
     start = 0;
     end = 0;
+    
 
     while ((end = BishopPos.find(',', start)) != std::string::npos)
     {
@@ -138,7 +140,7 @@ bool King::isUnderCheck(std::string cPos, Board board)
         delete(bishop);
         start = end + 1;
     }
-    std::string lastPos = BishopPos.substr(start);
+    lastPos = BishopPos.substr(start);
     if (!lastPos.empty())
     {
         Piece* piece = board.getPiece(lastPos);
@@ -173,7 +175,7 @@ bool King::isUnderCheck(std::string cPos, Board board)
         delete(queen);
         start = end + 1;
     }
-    std::string lastPos = QueenPos.substr(start);
+    lastPos = QueenPos.substr(start);
     if (!lastPos.empty())
     {
         Piece* piece = board.getPiece(lastPos);
@@ -208,7 +210,7 @@ bool King::isUnderCheck(std::string cPos, Board board)
         delete(rook);
         start = end + 1;
     }
-    std::string lastPos = RookPos.substr(start);
+    lastPos = RookPos.substr(start);
     if (!lastPos.empty())
     {
         Piece* piece = board.getPiece(lastPos);
@@ -242,7 +244,7 @@ bool King::isUnderCheck(std::string cPos, Board board)
         delete(kngiht);
         start = end + 1;
     }
-    std::string lastPos = KnightPos.substr(start);
+    lastPos = KnightPos.substr(start);
     if (!lastPos.empty())
     {
         Piece* piece = board.getPiece(lastPos);

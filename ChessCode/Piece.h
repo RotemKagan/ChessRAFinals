@@ -1,3 +1,4 @@
+#pragma once
 #ifndef PIECE_H
 #define PIECE_H
 
@@ -5,6 +6,7 @@
 #include "Board.h"
 
 class Board;
+
 
 class Piece {
 protected: 

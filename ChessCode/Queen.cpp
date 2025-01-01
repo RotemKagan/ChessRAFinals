@@ -87,8 +87,8 @@ int Queen::isLegal(std::string move, Board board)
     {
         if (startRow == endRow)
         {
-            int start = std::min(startCol, endCol) + 1;
-            int end = std::max(startCol, endCol);
+            int start = min(startCol, endCol) + 1;
+            int end = max(startCol, endCol);
             int i = 0;
             std::string pos = "";
             for (i = start; i < end; i++)
@@ -104,8 +104,8 @@ int Queen::isLegal(std::string move, Board board)
         //col move
         else if (startCol == endCol)
         {
-            int start = std::min((int)startRow, (int)endRow) + 1;
-            int end = std::max((int)startRow, (int)endRow);
+            int start = min((int)startRow, (int)endRow) + 1;
+            int end = max((int)startRow, (int)endRow);
             int i = 0;
             for (i = start; i < end; i++)
             {

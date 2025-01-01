@@ -1,3 +1,4 @@
+#pragma once
 #ifndef BOARD_H
 #define BOARD_H
 
@@ -16,6 +17,7 @@
 // White start at the first and second rows, and Black at the seventh and eighth
 
 class Piece;
+class Manager;
 
 class Board {
 private:

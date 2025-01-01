@@ -1,3 +1,4 @@
+#pragma once
 #include "Player.h"
 #include "Pipe.h"
 #include "Board.h"
@@ -7,6 +8,9 @@
 #define WHITE_K_COL 'e'
 #define WHITE_K_ROW '1'
 //kings pos in there starting pos
+
+class Board;
+class Player;
 
 class Manager {
 private:

@@ -136,7 +136,7 @@
     <ClCompile Include="Manager.h" />
     <ClCompile Include="Pawn.cpp" />
     <ClCompile Include="Pawn.h" />
-    <ClCompile Include="piece.cpp" />
+    <ClCompile Include="Piece.cpp" />
     <ClCompile Include="Piece.h" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Queen.cpp" />

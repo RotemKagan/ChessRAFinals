@@ -3,6 +3,8 @@
 #include "Board.h"
 #include "King.h"
 
+class Piece;
+
 class Player {
 private:
 	int color; //0 White - 0 Black

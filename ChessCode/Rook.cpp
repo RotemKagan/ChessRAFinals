@@ -48,8 +48,8 @@ int Rook::isLegal(std::string move, Board board)
     //row move
     if (startRow == endRow) 
     { 
-        int startCol = std::min(currCol, destCol) + 1;
-        int endCol = std::max(currCol, destCol);
+        startCol = min(startCol, endCol) + 1;
+        endCol = max(startCol, endCol);
         int i = 0;
         std::string pos = "";
         for (i = startCol; i < endCol; i++) 
@@ -65,8 +65,8 @@ int Rook::isLegal(std::string move, Board board)
     //col move
     else if (startCol == endCol) 
     { 
-        int startRow = std::min(currRow, destRow) + 1;
-        int endRow = std::max(currRow, destRow);
+        startRow = min(startRow, endRow) + 1;
+        endRow = max(startRow, endRow);
         int i = 0;
         for (i= startRow; i < endRow; i++) 
         {

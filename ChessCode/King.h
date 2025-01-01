@@ -1,7 +1,12 @@
 #pragma once
 #include "Board.h"
 #include "Piece.h"
-class King : public Piece
+
+class Board;
+
+
+
+class King: public Piece
 {
 
 public:

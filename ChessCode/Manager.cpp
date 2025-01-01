@@ -70,7 +70,7 @@ void Manager::playGame() { //main()
 
 	while (playerWhite->getKing() && playerBlack->getKing()){
 		userMove = pipe.getMessageFromGraphics();
-		isLegal = board->isLegal(userMove);
+		isLegal = board->isLegal(userMove, this);
 
 		if (isLegal < 2 || isLegal > 7) { //if the move is legal
 			board->makeMove(userMove);

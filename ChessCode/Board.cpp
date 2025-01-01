@@ -1,4 +1,5 @@
 #include "Board.h"
+#include "Piece.h"
 #include "Pawn.h"
 #include "Rook.h"
 #include "Queen.h"
@@ -195,8 +196,21 @@ int Board::isLegal(std::string move, Manager* manager) {
 
 	makeMove(move);
 
-	manager->getCurPlayer()->getKing()->isUnderCheck(); //checks if after the current move the king will be in check 
+	
 
+	if (manager->getCurPlayer()->getKing()->isUnderCheck(manager->getCurPlayer()->KingPoistionOfPlayer(*this), *this)) { //checks if after the current move the king will be in check 
+		legalCode = 4;
+		makeMove(reverseMove); //return the move because move is ilegal
+		return legalCode;
+	}
 
+	if (manager->getOtherPlayer()->getKing()->isUnderCheck(manager->getOtherPlayer()->KingPoistionOfPlayer(*this), *this)) { //
+		legalCode = 1;
+		makeMove(reverseMove); //return the move because move is ilegal
+		return legalCode;
+	}
+
+	makeMove(reverseMove);
+	return 0;
 
 }
