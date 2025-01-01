@@ -1,35 +1,30 @@
-﻿  Board.h
-  King.cpp
-C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\newPull\ChessRAFinals\ChessCode\King.cpp(92,31): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\newPull\ChessRAFinals\ChessCode\King.cpp(127,33): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\newPull\ChessRAFinals\ChessCode\King.cpp(162,32): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\newPull\ChessRAFinals\ChessCode\King.cpp(197,31): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\newPull\ChessRAFinals\ChessCode\King.cpp(231,33): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-  Manager.h
+﻿  Manager.h
   Piece.cpp
-C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\newPull\ChessRAFinals\ChessCode\King.h(9,20): error C2504: 'Piece': base class undefined
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\newPull\ChessRAFinals\ChessCode\King.h(10,21): error C2504: 'Piece': base class undefined
   (compiling source file 'Piece.cpp')
   
-C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\newPull\ChessRAFinals\ChessCode\King.h(15,15): error C3668: 'King::makeMove': method with override specifier 'override' did not override any base class methods
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\newPull\ChessRAFinals\ChessCode\King.h(16,15): error C3668: 'King::makeMove': method with override specifier 'override' did not override any base class methods
   (compiling source file 'Piece.cpp')
   
-C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\newPull\ChessRAFinals\ChessCode\King.h(16,14): error C3668: 'King::isLegal': method with override specifier 'override' did not override any base class methods
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\newPull\ChessRAFinals\ChessCode\King.h(17,14): error C3668: 'King::isLegal': method with override specifier 'override' did not override any base class methods
   (compiling source file 'Piece.cpp')
   
-C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\newPull\ChessRAFinals\ChessCode\King.h(17,15): error C3668: 'King::isUnderCheck': method with override specifier 'override' did not override any base class methods
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\newPull\ChessRAFinals\ChessCode\King.h(18,15): error C3668: 'King::isUnderCheck': method with override specifier 'override' did not override any base class methods
   (compiling source file 'Piece.cpp')
   
   Piece.h
-C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\newPull\ChessRAFinals\ChessCode\King.h(9,20): error C2504: 'Piece': base class undefined
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\newPull\ChessRAFinals\ChessCode\King.h(10,21): error C2504: 'Piece': base class undefined
   (compiling source file 'Piece.h')
   
-C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\newPull\ChessRAFinals\ChessCode\King.h(15,15): error C3668: 'King::makeMove': method with override specifier 'override' did not override any base class methods
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\newPull\ChessRAFinals\ChessCode\King.h(16,15): error C3668: 'King::makeMove': method with override specifier 'override' did not override any base class methods
   (compiling source file 'Piece.h')
   
-C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\newPull\ChessRAFinals\ChessCode\King.h(16,14): error C3668: 'King::isLegal': method with override specifier 'override' did not override any base class methods
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\newPull\ChessRAFinals\ChessCode\King.h(17,14): error C3668: 'King::isLegal': method with override specifier 'override' did not override any base class methods
   (compiling source file 'Piece.h')
   
-C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\newPull\ChessRAFinals\ChessCode\King.h(17,15): error C3668: 'King::isUnderCheck': method with override specifier 'override' did not override any base class methods
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\newPull\ChessRAFinals\ChessCode\King.h(18,15): error C3668: 'King::isUnderCheck': method with override specifier 'override' did not override any base class methods
   (compiling source file 'Piece.h')
   
+  Player.cpp
   Generating Code...
+C:\Users\Cyber_User\Documents\Magshimim\Year 2\C++\ChessProj\newPull\ChessRAFinals\ChessCode\Player.cpp(41,1): warning C4715: 'Player::KingPoistionOfPlayer': not all control paths return a value

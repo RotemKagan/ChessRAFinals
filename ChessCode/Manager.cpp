@@ -34,7 +34,7 @@ char* Manager::getStartMsg(bool isWhiteFirst) { //the first msg that the front e
 	std::string nonP = "################################";
 	std::string firstP = "rnbqkbnrpppppppp";
 	std::string full = "";
-	char msg[] = "#PPPPPPPPRNBQKBNR###############################rnbqkbnrpppppppp";
+	char msg[] = "#PPPPPPPPRNBQKBNR################################rnbqkbnrpppppppp";
 	char* ret = msg;
 	return ret;
 }
@@ -43,9 +43,11 @@ char* Manager::getStartMsg(bool isWhiteFirst) { //the first msg that the front e
 void Manager::playGame() { //main()
 	pipe.connect();
 
+	char msgToFront[] = "PPPPPPPPRNBQKBNR################################rnbqkbnrpppppppp";
+
 	this->board->resetBoard(); //create the pieces in there starting pos on the board
 
-	char* firstMsgToGrp = getStartMsg(true);
+	char* firstMsgToGrp = msgToFront;
 	std::string userMove = "";
 	std::string pos = "";
 
@@ -90,6 +92,5 @@ void Manager::playGame() { //main()
 
 	}
 
-	delete board;
 	pipe.close();
 }

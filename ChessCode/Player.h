@@ -4,6 +4,7 @@
 #include "King.h"
 
 class Piece;
+class Board;
 
 class Player {
 private:
